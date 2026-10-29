@@ -3,7 +3,7 @@
 Gestión profesional de calzado, control de inventario por matriz de tallas y colores, arqueos de caja y cumplimiento riguroso de la normativa **VeriFactu / Ley Antifraude**.
 
 > **Web Oficial y Descarga Gratuita:** [https://www.carrito5.com/tpv-zapateria.html](https://www.carrito5.com/tpv-zapateria.html)  
-> *Versión completa con hasta 1.000 artículos gratis para siempre. Licencia definitiva de 333 € de pago único (sin cuotas mensuales ni comisiones por venta).*
+> *Versión completa con hasta 50 facturas al mes gratis para siempre. Licencia definitiva de 333 € de pago único (sin cuotas mensuales ni comisiones por venta).*
 
 ---
 
@@ -40,7 +40,7 @@ La gestión de una zapatería presenta particularidades que un software de comer
 
 | Característica | TPV en la Nube Típico | Carrito 5 (Caja 5) |
 | :--- | :--- | :--- |
-| **Coste Inicial** | 0 € - 50 € | **0 € (Hasta 1.000 artículos gratis)** |
+| **Coste Inicial** | 0 € - 50 € | **0 € (Hasta 50 facturas al mes gratis)** |
 | **Cuota Mensual** | 45 € a 65 € / mes | **0 € / mes (Cero cuotas para siempre)** |
 | **Licencia Definitiva** | No existe (Alquiler obligatorio) | **333 € (Pago único en propiedad)** |
 | **Funcionamiento sin Internet** | Se bloquea o modo limitado | **100% operativo en local (Windows)** |
