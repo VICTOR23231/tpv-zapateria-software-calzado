@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Software TPV para Zapaterías y Calzado | Control de Tallas y VeriFactu 2026</title>
+    <meta name="description" content="Software TPV para tiendas de calzado y zapaterías en España. Control de matriz de tallas y números, tickets con código QR VeriFactu y funcionamiento offline en Windows. Hasta 50 facturas al mes gratis.">
+    
+    <!-- Schema.org SoftwareApplication -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "SoftwareApplication",
+      "name": "Carrito 5 - TPV Zapatería",
+      "operatingSystem": "Windows 10, Windows 11",
+      "applicationCategory": "BusinessApplication",
+      "offers": {
+        "@type": "Offer",
+        "price": "0.00",
+        "priceCurrency": "EUR",
+        "description": "Hasta 50 facturas al mes gratis para siempre. Licencia definitiva de 333 € pago único."
+      },
+      "url": "https://www.carrito5.com/tpv-zapateria.html"
+    }
+    </script>
+
+    <!-- Schema.org FAQPage -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cómo gestiona Carrito 5 las tallas y números en zapaterías?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Carrito 5 incluye una matriz nativa de producto modelo con variantes de tallas (del 18 al 48) y colores, mostrando las existencias reales por número en la misma pantalla de cobro sin tener que salir a otros menús."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cumple con la normativa VeriFactu de la Agencia Tributaria?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, genera facturas simplificadas con código QR oficial y encadenamiento seguro de registros conforme a la Ley 11/2021 Antifraude."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el programa?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Dispone de una versión completa con hasta 50 facturas al mes gratis para siempre. Si necesitas facturación ilimitada, la licencia definitiva cuesta 333 € de pago único, sin cuotas mensuales."
+          }
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        :root {
+            --primary: #1e3a8a;
+            --primary-dark: #172554;
+            --accent: #0f766e;
+            --accent-hover: #115e59;
+            --slate-900: #0f172a;
+            --slate-700: #334155;
+            --slate-100: #f1f5f9;
+            --slate-50: #f8fafc;
+        }
+        * { box-sizing: border-box; margin: 0; padding: 0; font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; }
+        body { background: var(--slate-50); color: var(--slate-700); line-height: 1.6; }
+        header { background: white; border-bottom: 1px solid #e2e8f0; padding: 1rem 1.5rem; position: sticky; top: 0; z-index: 50; }
+        .nav-container { max-width: 1100px; margin: 0 auto; display: flex; justify-content: space-between; align-items: center; }
+        .logo { font-size: 1.25rem; font-weight: 800; color: var(--primary); text-decoration: none; }
+        .logo span { color: var(--accent); }
+        .btn-header { background: var(--accent); color: white; padding: 0.5rem 1rem; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 0.9rem; transition: background 0.2s; }
+        .btn-header:hover { background: var(--accent-hover); }
+
+        .hero { max-width: 1100px; margin: 3rem auto; padding: 0 1.5rem; text-align: center; }
+        .badge { display: inline-block; background: #e0f2fe; color: #0369a1; padding: 0.35rem 0.85rem; border-radius: 9999px; font-size: 0.85rem; font-weight: 700; margin-bottom: 1.25rem; }
+        h1 { font-size: 2.5rem; font-weight: 900; color: var(--slate-900); line-height: 1.2; margin-bottom: 1.25rem; letter-spacing: -0.02em; }
+        h1 span { color: var(--primary); }
+        .hero-p { font-size: 1.15rem; color: #475569; max-width: 750px; margin: 0 auto 2rem auto; }
+        .cta-group { display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap; margin-bottom: 2.5rem; }
+        .btn-primary { background: var(--primary); color: white; padding: 0.9rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.05rem; box-shadow: 0 4px 12px rgba(30, 58, 138, 0.25); transition: transform 0.15s, background 0.2s; }
+        .btn-primary:hover { background: var(--primary-dark); transform: translateY(-1px); }
+        .btn-secondary { background: white; color: var(--slate-900); border: 1px solid #cbd5e1; padding: 0.9rem 1.8rem; border-radius: 8px; text-decoration: none; font-weight: 700; font-size: 1.05rem; }
+        .btn-secondary:hover { background: #f8fafc; }
+
+        .trust-bar { display: flex; justify-content: center; gap: 2rem; flex-wrap: wrap; margin-top: 1.5rem; padding-top: 1.5rem; border-top: 1px solid #e2e8f0; font-size: 0.9rem; color: #64748b; font-weight: 600; }
+        .trust-item { display: flex; align-items: center; gap: 0.4rem; }
+
+        .features { background: white; padding: 4rem 1.5rem; border-top: 1px solid #e2e8f0; border-bottom: 1px solid #e2e8f0; }
+        .container { max-width: 1100px; margin: 0 auto; }
+        .section-title { text-align: center; margin-bottom: 3rem; }
+        .section-title h2 { font-size: 2rem; color: var(--slate-900); margin-bottom: 0.75rem; }
+        .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; }
+        .card { background: var(--slate-50); border: 1px solid #e2e8f0; border-radius: 12px; padding: 2rem; }
+        .card-icon { font-size: 2rem; margin-bottom: 1rem; }
+        .card h3 { font-size: 1.25rem; color: var(--slate-900); margin-bottom: 0.75rem; }
+        .card p { color: #64748b; font-size: 0.95rem; }
+
+        .pricing-section { max-width: 850px; margin: 4rem auto; padding: 0 1.5rem; text-align: center; }
+        .pricing-card { background: white; border: 2px solid var(--primary); border-radius: 16px; padding: 3rem 2rem; box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.05); }
+        .price-badge { background: #dcfce7; color: #166534; font-weight: 700; font-size: 0.85rem; padding: 0.3rem 0.8rem; border-radius: 9999px; display: inline-block; margin-bottom: 1rem; }
+        .price { font-size: 3rem; font-weight: 900; color: var(--slate-900); margin-bottom: 0.5rem; }
+        .price span { font-size: 1.1rem; color: #64748b; font-weight: 500; }
+        .pricing-features { list-style: none; margin: 2rem 0; text-align: left; max-width: 450px; margin-left: auto; margin-right: auto; }
+        .pricing-features li { padding: 0.5rem 0; border-bottom: 1px solid #f1f5f9; display: flex; align-items: center; gap: 0.75rem; font-size: 0.95rem; }
+
+        .faq-section { max-width: 850px; margin: 0 auto 5rem auto; padding: 0 1.5rem; }
+        .faq-item { background: white; border: 1px solid #e2e8f0; border-radius: 8px; padding: 1.25rem; margin-bottom: 1rem; }
+        .faq-item h4 { font-size: 1.1rem; color: var(--slate-900); margin-bottom: 0.5rem; }
+        .faq-item p { color: #475569; font-size: 0.95rem; }
+
+        footer { background: var(--slate-900); color: #94a3b8; padding: 2.5rem 1.5rem; text-align: center; font-size: 0.85rem; }
+        footer a { color: #cbd5e1; text-decoration: none; margin: 0 0.5rem; }
+    </style>
+</head>
+<body>
+
+    <header>
+        <div class="nav-container">
+            <a href="https://www.carrito5.com/tpv-zapateria.html" class="logo">Carrito<span>5</span> Zapaterías</a>
+            <a href="https://www.carrito5.com/descargar-tpv-gratis.html" class="btn-header">Descargar Gratis</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <span class="badge">Novedad VeriFactu 2026</span>
+        <h1>Software TPV para Zapaterías <span>sin Cuotas Mensuales</span></h1>
+        <p class="hero-p">
+            Control exacto de tallas, colores y números sueltos. Funcionamiento 100% offline en Windows y cumplimiento estricto de la Ley Antifraude con facturas simplificadas con código QR.
+        </p>
+        <div class="cta-group">
+            <a href="https://www.carrito5.com/descargar-tpv-gratis.html" class="btn-primary">Descargar Versión Gratuita para Windows</a>
+            <a href="https://www.carrito5.com/tpv-zapateria.html" class="btn-secondary">Ver Ficha Técnica Completa</a>
+        </div>
+        <div class="trust-bar">
+            <div class="trust-item">✔ Hasta 50 facturas/mes gratis</div>
+            <div class="trust-item">✔ Licencia definitiva: 333 € pago único</div>
+            <div class="trust-item">✔ Funciona sin conexión a internet</div>
+            <div class="trust-item">✔ Compatible con lectores y cajones automáticos</div>
+        </div>
+    </section>
+
+    <section class="features">
+        <div class="container">
+            <div class="section-title">
+                <h2>Diseñado para el Mostrador de Calzado</h2>
+                <p>Olvídate de programas genéricos que no entienden de números, pares sueltos ni cambios de temporada.</p>
+            </div>
+            <div class="grid-3">
+                <div class="card">
+                    <div class="card-icon">👟</div>
+                    <h3>Matriz Nativa de Tallas y Colores</h3>
+                    <p>Crea el modelo padre y genera en segundos toda la curva de tallas (del número 18 al 48). Visualiza el stock de cada variante en la misma pantalla de cobro.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">💻</div>
+                    <h3>Modo Local en Windows (Cero Caídas)</h3>
+                    <p>El software corre directamente en tu ordenador (Windows 10 u 11). Si la fibra o el Wi-Fi se caen en plenas rebajas, tu tienda sigue cobrando e imprimiendo tickets con total normalidad.</p>
+                </div>
+                <div class="card">
+                    <div class="card-icon">⚖️</div>
+                    <h3>Homologación Oficial VeriFactu</h3>
+                    <p>Emisión inmediata de tickets con código QR oficial de la Agencia Tributaria y encadenamiento seguro de registros conforme a la Ley 11/2021.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="pricing-section">
+        <div class="pricing-card">
+            <span class="price-badge">Condiciones Claras y Sin Trampas</span>
+            <div class="price">0 € <span>/ versión gratuita</span></div>
+            <p style="color: #64748b; font-size: 1.05rem;">Hasta 50 facturas al mes gratis para siempre.</p>
+            <ul class="pricing-features">
+                <li>✔ Control completo de tallas, colores y números sueltos</li>
+                <li>✔ Impresión de facturas simplificadas con código QR</li>
+                <li>✔ Arqueos de caja diarios y cierres de turno Z sin descuadres</li>
+                <li>✔ Compatible con impresoras de tickets térmicas de 80mm y 58mm</li>
+                <li>✔ <b>Si necesitas facturación ilimitada:</b> Licencia definitiva de 333 € de pago único (en propiedad para siempre, sin cuotas mensuales).</li>
+            </ul>
+            <a href="https://www.carrito5.com/descargar-tpv-gratis.html" class="btn-primary" style="display: block; max-width: 400px; margin: 0 auto;">Descargar Instalador de Caja 5 Oficial</a>
+        </div>
+    </section>
+
+    <section class="faq-section">
+        <div class="section-title">
+            <h2>Preguntas Frecuentes</h2>
+        </div>
+        <div class="faq-item">
+            <h4>¿Qué ocurre si tengo picos de clientes en rebajas o Black Friday?</h4>
+            <p>Carrito 5 está optimizado para cobrar en menos de 3 segundos por cliente mediante lector de código de barras USB/Bluetooth o selección táctil rápida en pantalla.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Puedo instalarlo en un ordenador normal que ya tenga en la tienda?</h4>
+            <p>Sí. Funciona perfectamente en cualquier ordenador de sobremesa, TPV táctil todo-en-uno o portátil con Windows 10 o Windows 11.</p>
+        </div>
+        <div class="faq-item">
+            <h4>¿Quién desarrolla y da soporte a Carrito 5?</h4>
+            <p>Está desarrollado por <b>Ábaco Software</b>, empresa española especializada en soluciones de punto de venta y gestión de comercio con más de 21 años de trayectoria.</p>
+        </div>
+    </section>
+
+    <footer>
+        <p>© 2026 Carrito 5 - Ábaco Software. Todos los derechos reservados.</p>
+        <p style="margin-top: 0.5rem;">
+            <a href="https://www.carrito5.com/tpv-zapateria.html">TPV Zapaterías</a> | 
+            <a href="https://www.carrito5.com/descargar-tpv-gratis.html">Descargar TPV Gratis</a> | 
+            <a href="https://www.carrito5.com/preguntas-frecuentes-verifactu-ley-antifraude.html">VeriFactu FAQ</a>
+        </p>
+    </footer>
+
+</body>
+</html>
